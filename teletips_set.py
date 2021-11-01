@@ -27,23 +27,13 @@ TELETIPS_MAIN_MENU_BUTTONS = [
             ],
             [
                 InlineKeyboardButton('👥 GROUP', callback_data="GROUP_CALLBACK"),
-                InlineKeyboardButton('📣 CHANNEL', url='https://t.me/teletipsofficialchannel'),
-                InlineKeyboardButton('👨‍💻 CREATOR', url='https://t.me/thakshakar')
+                InlineKeyboardButton('📣 CHANNEL', url='https://t.me/komisanupdates'),
+                InlineKeyboardButton('👨‍💻 CREATOR', url='https://t.me/girls_lob')
             ],
-            [
-                InlineKeyboardButton('➕ CREATE YOUR BOT ➕', callback_data="TUTORIAL_CALLBACK")
-            ]
+           
         ]
 
-@bot.on_message(filters.command(['start','help']) & filters.private)
-async def start(client, message):
-    text = START_TEXT
-    reply_markup = InlineKeyboardMarkup(TELETIPS_MAIN_MENU_BUTTONS)
-    await message.reply(
-        text=text,
-        reply_markup=reply_markup,
-        disable_web_page_preview=True
-    )
+
 
 @bot.on_callback_query()
 async def callback_query(client: Client, query: CallbackQuery):
@@ -64,11 +54,9 @@ async def callback_query(client: Client, query: CallbackQuery):
 
     elif query.data=="GROUP_CALLBACK":
         TELETIPS_GROUP_BUTTONS = [
+          
             [
-                InlineKeyboardButton("🇱🇰 Anytime Any Qs", url="https://t.me/AnytimeAnyQs")
-            ],
-            [
-                InlineKeyboardButton("🌎 TeLe TiPs", url="https://t.me/teletipsofficialontopicchat")
+                InlineKeyboardButton("support", url="https://t.me/komi_support")
             ],
             [
                 InlineKeyboardButton("⬅️ BACK", callback_data="START_CALLBACK"),
@@ -86,7 +74,7 @@ async def callback_query(client: Client, query: CallbackQuery):
     elif query.data=="TUTORIAL_CALLBACK":
         TELETIPS_TUTORIAL_BUTTONS = [
             [
-                InlineKeyboardButton("🎥 Video", url="https://t.me/TeLeTiPsOfficialChannel/462")
+                InlineKeyboardButton("mhapvt", url="https://t.me/mhaprvt")
             ],
             [
                 InlineKeyboardButton("⬅️ BACK", callback_data="START_CALLBACK"),
@@ -109,7 +97,7 @@ async def callback_query(client: Client, query: CallbackQuery):
             [
                 InlineKeyboardButton('👥 GROUP', callback_data="GROUP_CALLBACK"),
                 InlineKeyboardButton('📣 CHANNEL', url='https://t.me/teletipsofficialchannel'),
-                InlineKeyboardButton('👨‍💻 CREATOR', url='https://t.me/thakshakar')
+                InlineKeyboardButton('👨‍💻 CREATOR', url='https://t.me/girls')
             ],
             [
                 InlineKeyboardButton('➕ CREATE YOUR BOT ➕', callback_data="TUTORIAL_CALLBACK")
