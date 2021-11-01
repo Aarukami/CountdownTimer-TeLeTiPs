@@ -96,8 +96,8 @@ async def callback_query(client: Client, query: CallbackQuery):
             ],
             [
                 InlineKeyboardButton('👥 GROUP', callback_data="GROUP_CALLBACK"),
-                InlineKeyboardButton('📣 CHANNEL', url='https://t.me/teletipsofficialchannel'),
-                InlineKeyboardButton('👨‍💻 CREATOR', url='https://t.me/girls')
+                InlineKeyboardButton('📣 CHANNEL', url='https://t.me/komisanupdates'),
+                InlineKeyboardButton('👨‍💻 CREATOR', url='https://t.me/girls_lob')
             ],
             [
                 InlineKeyboardButton('➕ CREATE YOUR BOT ➕', callback_data="TUTORIAL_CALLBACK")
